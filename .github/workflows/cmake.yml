@@ -139,6 +139,20 @@ jobs:
             environment_script: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
             cxxver: 20,
           }
+          - {
+            name: "Windows MSVC 2022 (x64) C++17",
+            os: windows-2022,
+            cxx: "cl",
+            environment_script: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
+            cxxver: 17,
+          }
+          - {
+            name: "Windows MSVC 2022 (x64) C++20",
+            os: windows-2022,
+            cxx: "cl",
+            environment_script: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
+            cxxver: 20,
+          }
 
     steps:
     - uses: actions/checkout@v2
